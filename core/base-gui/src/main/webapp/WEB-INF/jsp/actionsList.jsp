@@ -55,9 +55,8 @@
 			"taskId": taskId,
 			"widgetData": JsonWidgetData
 		})
-		.done(function(result)
+		.done(function(data)
 		{
-			var data = result.result;
 			if(data.errors != null)
 			{
 				addAlerts(data.errors);
@@ -137,9 +136,8 @@
 			"skipSaving": skipSaving,
 			"widgetData": JsonWidgetData
 		})
-		.done(function(result)
-		{ 
-			var data = result.result;
+		.done(function(data)
+		{
 			<!-- Errors handling -->
 			windowManager.clearErrors();
 			
